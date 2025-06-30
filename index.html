@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thùy Trang - Công chúa dễ thương ✨</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #fff5f7;
+            color: #ff6b9d;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(255, 105, 140, 0.2);
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .birthday {
+            font-size: 1.5em;
+            background-color: white;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 50px;
+            margin: 15px 0;
+            color: #ff6b9d;
+            box-shadow: 0 5px 15px rgba(255, 105, 140, 0.2);
+        }
+        
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            display: block;
+            background-color: #ffd6e0;
+        }
+        
+        .section {
+            background-color: white;
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(255, 105, 140, 0.1);
+        }
+        
+        h2 {
+            color: #ff6b9d;
+            border-bottom: 2px dashed #ffb6c1;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        .hobbies {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .hobby {
+            background-color: #ffebf1;
+            padding: 15px;
+            border-radius: 15px;
+            width: 120px;
+            transition: transform 0.3s;
+        }
+        
+        .hobby:hover {
+            transform: scale(1.1) rotate(5deg);
+            background-color: #ffd6e0;
+        }
+        
+        .emoji {
+            font-size: 2em;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .tiktok-btn {
+            display: inline-block;
+            background-color: #ff0050;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 0, 80, 0.3);
+        }
+        
+        .tiktok-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 0, 80, 0.4);
+            background-color: #ff1a6a;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            color: #ff8fab;
+            font-size: 0.9em;
+        }
+        
+        .hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .heart {
+            position: absolute;
+            font-size: 20px;
+            color: rgba(255, 107, 157, 0.5);
+            animation: float 5s linear infinite;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts" id="hearts"></div>
+    
+    <div class="container">
+        <header>
+            <h1>Thùy Trang ✨</h1>
+            <div class="birthday">🎂 11/06/2002 🎂</div>
+            <img src="https://i.imgur.com/placeholder.jpg" alt="Thùy Trang" class="profile-pic" id="profilePic">
+        </header>
+        
+        <div class="section">
+            <h2>Giới Thiệu 🌸</h2>
+            <p>Xin chào! Mình là Thùy Trang, một cô gái dễ thương với niềm đam mê ẩm thực và chia sẻ niềm vui với mọi người qua các video stream trên TikTok!</p>
+            <p>Mình luôn cố gắng mang lại năng lượng tích cực và những nụ cười cho mọi người ❤️</p>
+        </div>
+        
+        <div class="section">
+            <h2>Sở Thích Cá Nhân 🍭</h2>
+            <div class="hobbies">
+                <div class="hobby">
+                    <span class="emoji">🍜</span>
+                    <span>Ăn uống</span>
+                </div>
+                <div class="hobby">
+                    <span class="emoji">🎤</span>
+                    <span>Hát hò</span>
+                </div>
+                <div class="hobby">
+                    <span class="emoji">🎮</span>
+                    <span>Chơi game</span>
+                </div>
+                <div class="hobby">
+                    <span class="emoji">📷</span>
+                    <span>Chụp ảnh</span>
+                </div>
+                <div class="hobby">
+                    <span class="emoji">🛍️</span>
+                    <span>Mua sắm</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>TikTok Streaming 🎥</h2>
+            <p>Thùy Trang là một streamer TikTok đáng yêu với nội dung vui vẻ, hài hước và gần gũi!</p>
+            <p>Hãy follow và ủng hộ Trang trên TikTok nhé ❤️</p>
+            <a href="https://www.tiktok.com/@thuytrang" class="tiktok-btn">Theo dõi Trang trên TikTok</a>
+        </div>
+        
+        <footer>
+            <p>Made with ❤️ for the most beautiful girl - Thùy Trang</p>
+            <p>© 2023 - Trang Cute Siêu Cấp VIP Pro</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Tạo trái tim bay
+        function createHearts() {
+            const heartsContainer = document.getElementById('hearts');
+            for (let i = 0; i < 20; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                heart.innerHTML = '❤️';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.top = Math.random() * 100 + 'vh';
+                heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+                heart.style.animationDuration = (Math.random() * 5 + 3) + 's';
+                heart.style.animationDelay = Math.random() * 2 + 's';
+                heartsContainer.appendChild(heart);
+            }
+        }
+        
+        // Đổi màu ảnh profile khi hover
+        document.getElementById('profilePic').addEventListener('mouseover', function() {
+            this.style.boxShadow = '0 0 30px #ff6b9d';
+        });
+        
+        document.getElementById('profilePic').addEventListener('mouseout', function() {
+            this.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.1)';
+        });
+        
+        // Khởi tạo
+        window.onload = function() {
+            createHearts();
+        };
+    </script>
+</body>
+</html>
